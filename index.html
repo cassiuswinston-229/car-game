@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title> Rainy Road Rager</title>
+    <h1 class="title">Rainy Road Rager 
+    <span>&#127783;</span>
+    </h1>
+</head>
+<body id="body">
+    <div class="container">
+      <div class="col-1">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked"><span>&#128265</span></label>
+        </div>
+      </div>  
+      <div class="col-8" id="game">
+            <div class="rain"></div>
+            <div id="left"></div>
+            <div id="right"></div>
+            <div id="block">
+                <img src="/assets/rain-puddle-flat.png" style="width:100px;height:100px; alt="puddles">
+            </div>
+            <div id="road"></div>
+            <div id="character" >
+                <img src="/assets/car.png" style="width:100px;height:100px; alt="user-car">
+            </div>
+            <div id="start-game-overlay">
+              <h3 class="start-title">Road Rager<span id="drop">&#128167;</span></h3>
+              <button id="start-btn">Start</button>
+          </div>
+            <div id="game-over-overlay">
+              <h4>Game Over!</h4>
+              <p>Your score is: <span id="score"></span></p>
+              <button id="play-again-btn">Play Again?</button>
+          </div>
+          <div id="pause-overlay">
+            <h1>Paused</h1>
+          </div>
+          </div>
+          <div class="col-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"><u>Key</u></th>
+                  <th scope="col"><u>Move</u></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                      <span>&#11013</span></th>
+                  <td>Left</td>
+                </tr>
+                <tr>
+                  <th scope="row"><span>&#10145</span></th>
+                  <td>Right</td>
+                </tr>
+                <tr>
+                  <th scope="row"><span>&#11014</span></th>
+                  <td>Pause</td>
+                </tr>
+                <tr>
+                  <th scope="row"><span>&#11015</span></th>
+                  <td>Resume</td>
+                </tr>
+                <tr>
+                  <th scope="row"><span>Spacebar/Click</span></th>
+                  <td>Play Again</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.it nd.min.js"></script>
+<footer>
+  <p id="footer">&copy; Cassius Winston JS Game Project</p>
+</footer>
+  </body>
+</html>
